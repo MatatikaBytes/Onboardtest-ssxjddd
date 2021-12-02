@@ -6,6 +6,10 @@ plugins:
   - name: tap-google-analytics
     variant: meltano
     pip_url: git+https://github.com/Matatika/tap-google-analytics.git
+  loaders:
+  - name: target-postgres
+    variant: meltano
+    pip_url: git+https://github.com/meltano/target-postgres.git
   transforms:
   - name: dbt-google-analytics
     variant: meltano
